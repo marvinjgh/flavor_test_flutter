@@ -1,4 +1,4 @@
-package com.marvinjgh.flavor1.flavor_test
+package com.marvinjgh.flavor
 
 import io.flutter.embedding.android.FlutterActivity
 
