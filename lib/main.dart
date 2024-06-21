@@ -1,3 +1,5 @@
+import 'package:flavor_test/generated/l10n.dart';
+import 'package:flavor_test/generated/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/home_page.dart';
@@ -12,6 +14,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    List<LocalizationsDelegate<dynamic>> localizationDelegates =
+        List.from(AppLocalizations.localizationsDelegates)
+          ..add(Localize.delegate);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -34,6 +39,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomePage(title: 'Flutter Demo Home Page'),
+      localizationsDelegates: localizationDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
     );
   }
 }

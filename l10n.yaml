@@ -1,0 +1,5 @@
+arb-dir: lib/internationalization
+template-arb-file: intl_es.arb
+output-localization-file: app_localizations.dart
+synthetic-package: false
+output-dir: lib/generated/localization

@@ -1,3 +1,4 @@
+import 'package:flavor_test/generated/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -69,6 +70,7 @@ class _HomePageState extends State<HomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(AppLocalizations.of(context)!.helloWorld),
             const Text(
               'You have pushed the button this many times:',
             ),
