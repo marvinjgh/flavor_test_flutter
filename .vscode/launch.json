@@ -5,15 +5,29 @@
       "name": "full",
       "request": "launch",
       "type": "dart",
-      "program": "lib/main.dart",
+      "program": "lib/main_full.dart",
       "args": ["--flavor", "full"]
+    },
+    {
+      "name": "full-R",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_full.dart",
+      "args": ["--flavor", "full", "--release"]
     },
     {
       "name": "free",
       "request": "launch",
       "type": "dart",
-      "program": "lib/main.dart",
+      "program": "lib/main_free.dart",
       "args": ["--flavor", "free"]
+    },
+    {
+      "name": "free-R",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_free.dart",
+      "args": ["--flavor", "free", "--release"]
     }
   ],
   "compounds": []

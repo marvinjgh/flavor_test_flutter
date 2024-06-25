@@ -1,5 +1,6 @@
 import 'package:flavor_test/generated/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -71,6 +72,9 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(AppLocalizations.of(context)!.helloWorld),
+            SvgPicture.asset('assets/full/update.svg',
+                semanticsLabel: 'Acme Logo'),
+            ClipOval(child: Image.asset('assets/full/logo.png')),
             const Text(
               'You have pushed the button this many times:',
             ),
